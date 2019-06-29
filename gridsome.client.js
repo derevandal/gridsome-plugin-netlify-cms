@@ -19,7 +19,7 @@ const onInitialClientRender = ({ hash, enableIdentityWidget, publicPath }) => {
         netlifyIdentityWidget.on(`init`, user => {
           if (!user) {
             netlifyIdentityWidget.on(`login`, () => {
-              document.location.href = `${__PATH_PREFIX__}${publicPath}/`
+              document.location.href = `${publicPath}/`
             })
           }
         })
